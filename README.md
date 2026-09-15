@@ -38,88 +38,9 @@ Durante a atividade, foram realizadas as seguintes práticas:
 
 A aplicação utilizada na atividade possui a seguinte estrutura:
 
+```text
 Frontend
     ↓
 Backend
     ↓
- MySQL
-
-Os serviços foram executados utilizando Docker Compose.
-
-Containers
-front-recados — responsável pelo frontend
-back-recados — responsável pelo backend
-banco-recados — responsável pelo banco de dados MySQL
-Rede
-
-Foi utilizada a rede Docker:
-
-rede-recados
-
-Ela permite a comunicação entre os containers da aplicação.
-
-Volume
-
-Foi criado o volume:
-
-dados_recados
-
-O volume foi utilizado para armazenar os dados do MySQL de forma persistente.
-
-Docker Compose
-
-O arquivo docker-compose.yml foi utilizado para definir e executar os serviços da aplicação em conjunto.
-
-A configuração inclui:
-
-Frontend
-Backend
 MySQL
-Rede Docker
-Volume para persistência
-Dependência entre os serviços
-
-A aplicação pode ser executada com:
-
-docker compose up -d --build
-
-Após a inicialização, o frontend pode ser acessado pelo navegador através de:
-
-http://localhost:8080
-Persistência dos dados
-
-Um dos objetivos da atividade foi compreender a diferença entre remover os containers e remover também os dados persistidos.
-
-Ao executar:
-
-docker compose down
-
-os containers são removidos, mas o volume permanece.
-
-Ao executar:
-
-docker compose down -v
-
-os containers e o volume também são removidos.
-
-Esse teste permitiu observar na prática a função dos volumes na persistência de dados.
-
-Tecnologias e ferramentas
-Docker
-Docker Compose
-Docker Volume
-Docker Network
-MySQL
-Node.js
-Express
-NGINX
-HTML
-CSS
-JavaScript
-Contexto acadêmico
-
-A aplicação utilizada neste repositório foi previamente disponibilizada pelo professor para a realização da atividade.
-
-O desenvolvimento do frontend, backend e banco de dados não fez parte da atividade. O foco foi estudar e praticar a utilização do Docker e do Docker Compose sobre uma aplicação já preparada.
-
-Este repositório faz parte do meu histórico de estudos durante a formação técnica.

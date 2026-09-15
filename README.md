@@ -44,3 +44,5 @@ Frontend
 Backend
     ↓
 MySQL
+
+Os serviços foram executados utilizando Docker Compose.

@@ -83,3 +83,39 @@ A aplicação pode ser executada com:
 Após a inicialização, o frontend pode ser acessado pelo navegador através de:
 
 `http://localhost:8080`
+
+## Persistência dos dados
+
+Um dos objetivos da atividade foi compreender a diferença entre remover os containers e remover também os dados persistidos.
+
+Ao executar:
+
+`docker compose down` - os containers são removidos, mas o volume permanece.
+
+Ao executar:
+
+`docker compose down -v` - os containers e o volume também são removidos.
+
+Esse teste permitiu observar na prática a função dos volumes na persistência de dados.
+
+## Tecnologias e ferramentas
+
+- Docker
+- Docker Compose
+- Docker Volume
+- Docker Network
+- MySQL
+- Node.js
+- Express
+- NGINX
+- HTML
+- CSS
+- JavaScript
+
+## Contexto acadêmico
+
+A aplicação utilizada neste repositório foi previamente disponibilizada pelo professor para a realização da atividade.
+
+O desenvolvimento do frontend, backend e banco de dados não fez parte da atividade. O foco foi estudar e praticar a utilização do Docker e do Docker Compose sobre uma aplicação já preparada.
+
+Este repositório faz parte do meu histórico de estudos durante a formação técnica.

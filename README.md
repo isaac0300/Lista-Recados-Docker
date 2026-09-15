@@ -51,3 +51,30 @@ Os serviços foram executados utilizando Docker Compose.
 - `front-recados` — responsável pelo frontend
 - `back-recados` — responsável pelo backend
 - `banco-recados` — responsável pelo banco de dados MySQL
+
+## Rede
+Foi utilizada a rede Docker:
+`rede-recados` - ela permite a comunicação entre os containers da aplicação.
+
+## Volume
+`dados_recados` - o volume foi utilizado para armazenar os dados do MySQL de forma persistente.
+
+## Docker Compose
+O arquivo `docker-compose.yml` foi utilizado para definir e executar os serviços da aplicação em conjunto.
+
+A configuração inclui:
+
+- Frontend
+- Backend
+- MySQL
+- Rede Docker
+- Volume para persistência
+- Dependência entre os serviços
+
+A aplicação pode ser executada com:
+
+`docker compose up -d --build` 
+
+Após a inicialização, o frontend pode ser acessado pelo navegador através de:
+
+`http://localhost:8080`

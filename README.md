@@ -47,7 +47,7 @@ MySQL
 
 Os serviços foram executados utilizando Docker Compose.
 ```
-Containers
+## Containers
 - `front-recados` — responsável pelo frontend
 - `back-recados` — responsável pelo backend
 - `banco-recados` — responsável pelo banco de dados MySQL

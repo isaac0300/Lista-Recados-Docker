@@ -99,7 +99,7 @@ Ao executar:
 
 Esse teste permitiu observar na prática a função dos volumes na persistência de dados.
 
-## Tecnologias e ferramentas
+## Tecnologias presentes na aplicação
 
 - Docker
 - Docker Compose
